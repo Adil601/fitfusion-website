@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Fusion Features</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2em;
+        }
+
+        .feature {
+            flex: 0 0 30%;
+            background-color: #fff;
+            margin: 1em;
+            padding: 1.5em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }    
+        header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    display: none; /* Ensure the menu is initially hidden */
+}
+
+.menu.show-menu {
+    display: flex;
+}
+
+.menu li {
+    margin: 15px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <button class="menu-icon" onclick="toggleMenu()">&#9776;</button>
+        <ul class="menu">
+            <li><a href="home2.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+        <h1>Fitness Fusion</h1>
+        <p>Unleash the Power Within</p>
+    </header>
+
+    <section>
+        <div class="feature">
+            <h2>Personalized Workouts</h2>
+            <p>Create and follow tailored workout plans to achieve your fitness goals.</p>
+        </div>
+
+        <div class="feature">
+            <h2>Nutrition Guidance</h2>
+            <p>Get personalized nutrition advice and meal plans to complement your workouts.</p>
+        </div>
+
+        <div class="feature">
+            <h2>Live Classes</h2>
+            <p>Join live fitness classes led by experienced instructors from the comfort of your home.</p>
+        </div>
+
+        <div class="feature">
+            <h2>Community Support</h2>
+            <p>Connect with a community of like-minded individuals for motivation and support.</p>
+        </div>
+
+        <div class="feature">
+            <h2>Progress Tracking</h2>
+            <p>Monitor your fitness journey with detailed progress tracking and analytics.</p>
+        </div>
+
+        <div class="feature">
+            <h2>Flexible Membership</h2>
+            <p>Choose from various membership plans to fit your schedule and budget.</p>
+        </div>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>

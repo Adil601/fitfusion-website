@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-......" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center; /* Center-align the content */
+            margin: 0 auto; /* Center the container itself */
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .login-container input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .login-container .password-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .login-container .password-container i {
+            position: absolute;
+            top: 50%;
+            right: 8px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .login-container .password-container i:hover {
+            color: #555;
+        }
+
+        .login-container .submit-btn {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .login-container .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        .login-container .forgot-password {
+            color: #555;
+            text-decoration: none;
+            font-size: 12px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .login-container .alternative-login {
+            margin-top: 20px;
+        }
+
+        .login-container .alternative-login a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .login-container .show-password {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Registration Form</h2>
+    <form action="home2.html" method="post">
+        <input type="text" placeholder="Username" id="Username" name="Username" required>
+        <input type="email" placeholder="Email" id="email" name="email" required>
+        <input type="tel" placeholder="Telephone number" id="Telephone number" name="Telephone number" required>
+        <div class="password-container">
+            <input type="password" id="password" placeholder="Password" >
+            <i class="fa fa-eye" id="togglePassword" onclick="togglePassword()"></i>
+        </div>
+        <div class="alternative-login">
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://twitter.com/login?lang=en">Twitter</a>
+            <!-- Add more alternative login options as needed -->
+        </div>
+        <br>
+                <button id=type="submit" class="submit-btn">Login</a></button>
+    </form>
+</div>
+
+<script>
+    function togglePassword() {
+        var passwordField = document.getElementById("password");
+        var toggleIcon = document.getElementById("togglePassword");
+
+        if (passwordField.type === "password") {
+            passwordField.type = "text";
+            toggleIcon.className = "fa fa-eye-slash";
+        } else {
+            passwordField.type = "password";
+            toggleIcon.className = "fa fa-eye";
+        }
+    }
+</script>
+
+</body>
+</html>
